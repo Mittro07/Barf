@@ -1,0 +1,126 @@
+@use 'variables';
+@use 'animations';
+
+
+.testimonios {
+    width: 100%;
+    min-height: 400px;
+    padding: 70px 0;
+    animation: zoom-in 0.6s ease-out forwards;
+
+    .testimonios-box {
+        width: 70%;
+        margin: 0 auto;
+        min-height: 250px;
+        display: grid;
+        grid-template-columns: repeat(2, 36%);    
+        grid-auto-rows: auto;
+        gap: 25px;
+        justify-content: center;
+
+
+        .testimonios-card {
+            padding: 18px;
+            border-radius: 30px;
+            border: 2px solid variables.$blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            text-align: center;
+            transition: all .8s ease;
+
+            .img {
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+                background-color: black;
+                overflow: hidden;
+                box-shadow: 0 0 15px variables.$green;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            h3 {
+                font-size: 1.8rem;
+                color: variables.$blue;
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: variables.$green;
+            }
+
+            &:hover {
+                background-color: variables.$blue;
+                animation: zoom-in 0.6s ease-out forwards;
+
+                h3 {
+                    color: variables.$green;
+                }
+
+                p {
+                    color: variables.$orange;
+                }
+            }
+        }
+    }/* Testimonios box */
+}/* Testimonios */
+
+
+
+
+/* Testimonios media queries */
+
+@media screen and (max-width: 1300px) {
+    .testimonios {
+        .testimonios-box {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .testimonios {
+        .testimonios-box {
+            grid-template-columns: repeat(2, 45%);
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .testimonios {
+        .testimonios-box {
+            grid-template-columns: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .testimonios {
+        .testimonios-box {
+            grid-template-columns: 75%;
+            .testimonios-card {
+                h3 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .testimonios {
+        .testimonios-box {
+            grid-template-columns: 85%;
+        }
+    }
+}

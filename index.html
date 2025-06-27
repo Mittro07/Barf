@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="alimento Darf, comida para perros, comida para gatos, croquetas premium, nutrición animal, alimentación natural, proteína animal, bienestar animal, salud canina, salud felina, comida holística, dieta BARF, alimentos sin cereales, alimentación balanceada, ingredientes naturales, comida saludable para mascotas, comida hipoalergénica, nutrición veterinaria, alimentos crudos, comida deshidratada, suplementos naturales, perros activos, gatos exigentes, nutrición de calidad, proteína de origen animal, alimento artesanal, mascotas felices, comida sin conservadores, dieta especializada para perros, comida ecológica para animales">
+    <title>Bokä Ngati</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" type="image/png" href="./favicon-32x32.png">
+</head>
+<body>
+    
+    <section class="nav-box">
+        <nav class="navbar">
+            <img src="./assets/logo.png" alt="logo" id="logo">
+            <i class="bi bi-list" id="menu"></i>
+            <ul id="nav">
+                <i class="bi bi-x" id="close"></i>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./beneficios.html">Beneficios</a></li>
+                <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
+                <li><a href="./testimonios.html">Testimonios</a></li>
+                <li><a href="./precios.html">Suscripciones</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Alimenta su instinto, nutre su felicidad</h1>
+            <h3>Todo comenzó con la búsqueda de una mejor forma de alimentar a quienes más amamos. Hoy, Barf es parte de nuestra familia y queremos compartirlo contigo</h3>
+            <p>Encuentranos como <br> <span> "Patitas Felices" </span></p>
+            <button id="btn-contacto" onclick="location.href='#contacto'">Contacto</button>
+        </div>
+
+        <div class="hero-right">
+            <video src="./videos/video1.mp4" autoplay muted loop></video>
+        </div>
+    </section>
+
+    <section class="que-es">
+        <h2>¿Qué es?</h2>
+
+        <article class="que-es-box">
+            <div class="que-left">
+                <img src="./assets/dieta-barf-comida-cruda.jpg" alt="queesimagen">
+            </div>
+
+            <div class="que-right">
+                <h4>La dieta BARF (Biologically Appropriate Raw Food - Alimentación Cruda Biológicamente Apropiada), se basa en ofrecer a los perros una alimentación más cercana a la que sus ancestros habrían consumido en la naturaleza, compuesta principalmente por carne cruda, huesos carnosos, vísceras, frutas y verduras</h4>
+            </div>
+        </article>
+        <h3 class="marquee">Surge a principios de los años 1990, impulsada principalmente por el veterinario australiano Ian Billinghurst</h3>
+    </section>
+
+    <section class="calculadora-darf">
+        <h2>Calculadora BARF</h2>
+        <p>
+          <span>¿No sabes cuánta comida preparar para tu mascota?</span> Usa nuestra calculadora BARF y obtén la cantidad diaria recomendada según su peso y necesidades.
+        </p>
+
+        <article class="calculadora-box">
+            <div class="calc-left">
+                <div class="calc-box">
+                    <h3>Raza</h3>
+                    <select id="razas">
+                        <option value="">Selecciona una raza</option>
+<option value="labrador">Labrador Retriever</option>
+<option value="golden">Golden Retriever</option>
+<option value="pastor-aleman">Pastor Alemán</option>
+<option value="bulldog-ingles">Bulldog Inglés</option>
+<option value="bulldog-frances">Bulldog Francés</option>
+<option value="beagle">Beagle</option>
+<option value="poodle">Poodle</option>
+<option value="chihuahua">Chihuahua</option>
+<option value="yorkshire">Yorkshire Terrier</option>
+<option value="rottweiler">Rottweiler</option>
+<option value="doberman">Doberman</option>
+<option value="boxer">Boxer</option>
+<option value="dachshund">Dachshund (Salchicha)</option>
+<option value="shih-tzu">Shih Tzu</option>
+<option value="schnauzer">Schnauzer</option>
+<option value="pug">Pug</option>
+<option value="cocker-spaniel">Cocker Spaniel</option>
+<option value="border-collie">Border Collie</option>
+<option value="siberian-husky">Siberian Husky</option>
+<option value="gran-danes">Gran Danés</option>
+<option value="akita">Akita Inu</option>
+<option value="samoyedo">Samoyedo</option>
+<option value="bichon-frise">Bichón Frisé</option>
+<option value="maltes">Maltés</option>
+<option value="pastor-belga">Pastor Belga</option>
+<option value="pastor-shetland">Pastor de Shetland</option>
+<option value="bull-terrier">Bull Terrier</option>
+<option value="west-highland">West Highland White Terrier</option>
+<option value="caniche-toy">Caniche Toy</option>
+<option value="shar-pei">Shar Pei</option>
+<option value="basset-hound">Basset Hound</option>
+<option value="san-bernardo">San Bernardo</option>
+<option value="husky-alaskano">Husky Alaskano</option>
+<option value="fox-terrier">Fox Terrier</option>
+<option value="pointer">Pointer</option>
+<option value="galgo">Galgo</option>
+<option value="lhasa-apso">Lhasa Apso</option>
+<option value="pekinese">Pekinés</option>
+<option value="corgi">Corgi
+                    </select>
+
+                    <select id="gatos">
+                        <option value="">Selecciona una raza</option>
+                        <option value="siames">Siamés</option>
+                        <option value="persa">Persa</option>
+                        <option value="maine-coon">Maine Coon</option>
+                        <option value="ragdoll">Ragdoll</option>
+                        <option value="bengali">Bengalí</option>
+                        <option value="sphynx">Sphynx</option>
+                        <option value="british-shorthair">British Shorthair</option>
+                        <option value="abisinio">Abisinio</option>
+                        <option value="bosque-noruega">Bosque de Noruega</option>
+                        <option value="angora-turco">Angora Turco</option>
+                        <option value="burmes">Burmés</option>
+                        <option value="oriental">Oriental</option>
+                        <option value="azul-ruso">Azul Ruso</option>
+                        <option value="scottish-fold">Scottish Fold</option>
+                        <option value="exotico">Exótico de Pelo Corto</option>
+                    </select>
+                </div>
+
+                <div class="calc-box">
+                    <h3>Peso</h3>
+                    <input type="range" id="peso" min="1" max="80" step="1" value="10">
+                    <p id="peso-range">10 Kg</p>
+                </div>
+
+                <div class="calc-box">
+                    <h3>Actividad</h3>
+                    <select id="actividad">
+                        <option value="">Selecciona un nivel de actividad</option>
+                        <option value="baja">Baja</option>
+                        <option value="media">Media</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+
+                <button id="calcular">Calcular</button>
+            </div>
+            <div class="calc-right">
+                <h2 id="response">--</h2>
+            </div>
+        </article>
+
+        <video src="./videos/Video_Listo_Gato_y_Dieta.mp4" class="video-gato" autoplay muted loop></video>
+    </section>
+
+
+    <footer class="footer" id="contacto">
+        <article class="contact-footer">
+            <h3>Bokä Ngati</h3>
+            <p><i class="bi bi-telephone-fill"></i>+52 1 442 716 1910</p>
+            <p><i class="bi bi-envelope-fill"></i>patitas_felices@gmail.com</p>
+            <div class="socials"><i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-linkedin"></i><i class="bi bi-youtube"></i><i class="bi bi-twitter"></i></div>
+        </article>
+        <article class="info-footer">
+            <div class="info-fo-box">
+                <h5>Menu</h5>
+                <a href="">Inicio</a>
+                <a href="">Productos</a>
+                <a href="">Calculadora</a>
+                <a href="">Beneficios</a>
+                <a href="">Preguntas</a>
+            </div>
+
+            <div class="info-fo-box">
+                <h5>Company</h5>
+                <a href="">Sobre Nosotros</a>
+                <a href="">Historia</a>
+                <a href="">Equipo</a>
+                <a href="">Blog</a>
+                <a href="">Prensa</a>
+            </div>
+
+            <div class="info-fo-box">
+                <h5>Support</h5>
+                <a href="">Ayuda</a>
+                <a href="">Contacto</a>
+                <a href="">FAQ</a>
+                <a href="">Envíos</a>
+                <a href="">Garantía</a>
+            </div>
+
+        </article>
+        <article class="mail-footer">
+            <h3>Send us an email</h3>
+            <input type="text" id="email" placeholder="Enter your email">
+            <button type="submit" id="send-email">Send email</button>
+        </article>
+    </footer>
+    
+    
+    
+    
+    
+    <script src="./main.js"></script>
+</body>
+</html>

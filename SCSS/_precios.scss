@@ -1,0 +1,107 @@
+@use 'variables';
+@use 'animations';
+
+
+.prices {
+width: 100%;
+min-height: 350px;
+padding: 80px 0;
+display: grid;
+grid-template-columns: repeat(3, 20%);
+justify-content: center;
+gap: 45px;
+animation: zoom-in 0.6s ease-out forwards;
+
+.prices-card {
+    background-color: variables.$cream-footer;
+    padding: 18px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    text-align: center;
+    transition: all .5s ease;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: variables.$blue;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: variables.$gray;
+    }
+
+    p {
+        text-decoration: underline;
+        font-size: 1.2rem;
+    }
+
+    #adquirir {
+        width: 160px;
+        min-height: 50px;
+        padding: 12px;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        transition: all .5s ease;
+        cursor: pointer;
+        position: relative;
+        
+        
+        &:hover {
+            background-color: variables.$blue;
+            color: variables.$orange;
+        }
+
+    }
+
+    i {
+        margin: -20px;
+        display: inline-block;
+        font-size: 2rem;
+        animation: pulse 1.2s ease-in-out infinite;
+        color: variables.$blue;
+    }
+}
+}/* Prices */
+
+
+
+/* Prices media queries*/
+@media screen and (max-width: 1325px) {
+    .prices {
+        grid-template-columns: repeat(3, 25%);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .prices {
+        grid-template-columns: repeat(3, 30%);
+    }
+}
+@media screen and (max-width: 920px) {
+    .prices {
+        grid-template-columns: 45%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .prices {
+        grid-template-columns: 60%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .prices {
+        grid-template-columns: 70%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .prices {
+        grid-template-columns: 80%;
+    }
+}

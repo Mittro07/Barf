@@ -1,0 +1,60 @@
+@use 'variables';
+@use 'animations';
+
+
+.preguntas {
+width: 100%;
+min-height: 450px;
+padding: 80px 0;
+animation: pop-in 0.5s ease-out forwards;
+
+.preguntas-box {
+width: 60%;
+margin: 0 auto;
+min-height: 200px;
+display: flex;
+flex-direction: column;
+row-gap: 40px;
+
+.preguntas-card {
+    width: 100%;
+    border: 2.5px solid variables.$blue;
+    border-radius: 30px;
+    padding: 20px;
+
+    h2 {
+        width: 100%;
+        border-bottom: 2px solid variables.$green;
+        padding-bottom: 15px;
+        font-size: 2rem;
+    }
+
+    p {
+        width: 100%;
+        padding-top: 15px;
+        font-size: 1.5rem;
+        color: variables.$orange;
+    }
+}
+}/* Preguntas box */
+} /* Preguntas */
+
+
+
+/* Preguntas media queires */
+
+@media screen and (max-width: 1000px) {
+.preguntas {
+    .preguntas-box {
+        width: 75%;
+    }
+}
+}
+
+@media screen and (max-width: 720px) {
+.preguntas {
+    .preguntas-box {
+        width: 85%;
+    }
+}
+}

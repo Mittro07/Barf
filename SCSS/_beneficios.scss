@@ -1,0 +1,98 @@
+@use 'variables';
+@use 'animations';
+
+
+.beneficios {
+width: 100%;
+min-height: 300px;
+padding: 80px 0;
+animation: stagger-fade 0.4s ease forwards;
+
+h1 {
+    text-align: center;
+    color: variables.$green;
+    font-size: 3.5rem;
+    font-size: 600;
+}
+
+h2 {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    color: variables.$green;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.beneficios-box {
+    width: 100%;
+    min-height: 300px;
+    margin-top: 50px;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    grid-auto-rows: auto;
+    justify-content: center;
+    gap: 25px;
+    border-top: 4px solid variables.$blue;
+
+    .beneficios-card {
+        padding: 25px;
+        border-radius: 30px;
+        border: 2.5px solid variables.$gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 22px;
+    i {
+        font-size: 2.5rem;
+        color: variables.$orange;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        color: variables.$blue;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: variables.$orange;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+    }
+}
+}/* Beneficios box */
+}/* Beneficios */
+
+
+/* Beneficios media queries */
+
+@media screen and (max-width: 1600px) {
+    .beneficios {
+        .beneficios-box {
+            grid-template-columns: repeat(2, 35%);
+        }
+    }
+}
+@media screen and (max-width: 1150px) {
+    .beneficios {
+        .beneficios-box {
+            grid-template-columns: 50%;
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .beneficios {
+        .beneficios-box {
+            grid-template-columns: 60%;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .beneficios {
+        .beneficios-box {
+            grid-template-columns: 75%;
+        }
+    }
+}
