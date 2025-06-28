@@ -620,6 +620,9 @@ body {
   font-weight: 600;
   color: #bce3cb;
 }
+.hero .hero-left img {
+  width: 150px;
+}
 .hero .hero-left #btn-contacto {
   padding: 15px;
   border-radius: 22px;
